@@ -1,0 +1,9 @@
+hate_words
+dog
+cat
+hate
+offensive
+racist
+sexist
+violent
+discriminatory

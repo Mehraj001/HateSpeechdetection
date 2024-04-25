@@ -1,0 +1,17 @@
+ToastContainer and toast:
+The ToastContainer and toast components from the react-toastify library are used to 
+implement toast notifications in a React application. Toast notifications are small,
+non-intrusive messages that appear briefly on the screen to provide feedback or 
+information to the user. They are commonly used to display success messages, error
+messages, or other non-critical information.
+import { toast } from "react-toastify";
+exmple,
+// ...
+
+const showSuccessToast = () => {
+  toast.success("Success!");
+};
+
+const showErrorToast = () => {
+  toast.error("Error!");
+};
