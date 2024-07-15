@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 
-
 function Register() {
         const navigate=useNavigate();  
       const [values,setValues]=useState({

@@ -8,10 +8,10 @@ module.exports.addMessage = async (req, res, next) => {
       try {
         const { from, to, message } = req.body;
         const filePath = path.join('D:', 'chatapp', 'server', 'controllers', 'hate_speech.txt');
-        // Read the hate speech file
+        
         const hateSpeechFile = fs.readFileSync(filePath, 'utf8');
         const hateWords = hateSpeechFile.split('\n').map(word => word.trim());
-
+       
         const containsHateWord = hateWords.some(word => message.toLowerCase().includes(word.toLowerCase()));
         console.log(hateWords);
 

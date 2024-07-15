@@ -6,7 +6,7 @@ import {v4 as uuidv4} from "uuid";
 import axios from 'axios';
 import {sendMessageRoute,getAllMessagesRoute } from "../utils/APIRoutes";
 
-
+ 
 export default function ChatContainer({currentChat,currentUser,socket}) {
   const [messages,setMessages]=useState([]);
   const [arrivalMessage,setArrivalMessage]=useState(null);
